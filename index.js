@@ -29,5 +29,8 @@ button.addEventListener('click', function () {
         insight.style.backgroundColor = 'green';
         stat.textContent = 'Viral  🤑';
         stat.style.color = 'green';
+    } else if (porcentagem > 2 && porcentagem < 9.999) {
+        insight.style.backgroundColor = 'var(--primary-color)';
+        stat.textContent = '';
     }
 });
