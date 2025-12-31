@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --primary-color: #fcfcfc;
+    --secondary-color: #68d81e;
+    --text-color: #68d81e;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e0e0e0;
+    color: var(--text-color);
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+    width: 30%;
+    background-color: var(--primary-color);
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 25px;
+}
+
+.header h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+
+.inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: rgba(34, 33, 33, 0.575);
+    gap: 20px;
+}
+
+.range {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+.range label {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(34, 33, 33, 0.233);
+}
+
+#range1,
+#range2 {
+    -webkit-appearance: none;
+    width: 80%;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+#range1::-webkit-slider-runnable-track,
+#range2::-webkit-slider-runnable-track {
+    height: 20px;
+    background: #ccc;
+    border-radius: 16px;
+}
+
+#range1::-moz-range-track,
+#range2::-moz-range-track {
+    height: 25px;
+    background: #ccc;
+    border-radius: 16px;
+}
+
+/* bolinha do range */
+#range1::-webkit-slider-thumb,
+#range2::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid var(--secondary-color);
+    box-shadow: -407px 0 0 400px var(--secondary-color);
+}
+
+/* bolinha do range firefox*/
+#range1::-moz-range-thumb,
+#range2::-moz-range-thumb {
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid var(--secondary-color);
+    box-shadow: -407px 0 0 400px var(--secondary-color);
+}
+
+.Insight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 10px;
+    padding: 20px;
+}
+
+.Insight h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.Insight h3 span {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+button {
+    width: 50%;
+    height: 50px;
+    background-color: rgb(223, 103, 59);
+    color: var(--primary-color);
+    font-weight: bold;
+    border: none;
+    border-radius: 13px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+@media screen and (min-width: 275px) and (max-width: 700px),
+(max-width: 440px),
+(min-width: 375px) and (max-width: 500px),
+(min-width: 500px) and (max-width: 800px),
+(min-width: 600px) and (max-width: 1000px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .Insight {
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    h3,
+    span {
+        font-size: 10px;
+    }
+}
