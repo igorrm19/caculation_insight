@@ -20,11 +20,11 @@ button.addEventListener('click', function () {
     span3.textContent = ((range2.value / range1.value) * 100).toFixed(3);
     const porcentagem = span3.textContent;
 
-    if (porcentagem < 2.999) {
+    if (porcentagem <= 2) {
         insight.style.backgroundColor = 'red';
         stat.textContent = 'Fracasso 😒';
         stat.style.color = 'red';
-    } else if (porcentagem > 10.999) {
+    } else if (porcentagem > 9.999) {
         insight.style.backgroundColor = 'green';
         stat.textContent = 'Viral  🤑';
         stat.style.color = 'green';
