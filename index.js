@@ -5,7 +5,7 @@ const span2 = document.querySelector('#span2');
 const span3 = document.querySelector('#span3');
 const button = document.getElementById('button');
 const insight = document.getElementById('insight');
-const stat = document.getElementById('#status');
+const stat = document.getElementById('status');
 
 range1.addEventListener('input', function () {
     span1.textContent = this.value;
@@ -22,9 +22,11 @@ button.addEventListener('click', function () {
 
     if (porcentagem < 2.999) {
         insight.style.backgroundColor = 'red';
-        stat.innerText = 'Baixo';
+        stat.textContent = 'Fracasso 😒';
+        stat.style.color = 'red';
     } else if (porcentagem > 10.999) {
         insight.style.backgroundColor = 'green';
-        stat.innerText = 'Alto';
+        stat.textContent = 'Viral  🤑';
+        stat.style.color = 'green';
     }
 });
