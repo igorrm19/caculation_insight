@@ -24,6 +24,7 @@ button.addEventListener('click', function () {
         insight.style.backgroundColor = 'red';
         stat.textContent = 'Fracasso 😒';
         stat.style.color = 'red';
+
     } else if (porcentagem > 9.999) {
         insight.style.backgroundColor = 'green';
         stat.textContent = 'Viral  🤑';

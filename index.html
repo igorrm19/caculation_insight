@@ -16,13 +16,13 @@
         </div>
         <div class="inputs"
             style="height: 30%; display: flex; align-items: center; justify-content: center; flex-direction: column;">
-            <h3>Insira o valor de visualizações</h3>
+            <h3 id="header-title">Insira o valor de visualizações</h3>
             <div class="range">
-                <label for="altura">Numero de visualizações: <span id="span1"></span></label>
+                <label class="label" for="altura">Numero de visualizações: <span id="span1"></span></label>
                 <input type="range" id="range1" name="range1" min="0" max="10000000" value="0" />
             </div>
             <div class="range">
-                <label for="largura">Numero de curtidas: <span id="span2"></span></label>
+                <label class="label" for="largura">Numero de curtidas: <span id="span2"></span></label>
                 <input type="range" id="range2" name="range2" min="0" max="1000000" value="0" />
             </div>
         </div>
@@ -32,7 +32,7 @@
         </div>
         <div class="button"
             style="height: 25%; display: flex; align-items: center; justify-content: center; flex-direction: column;">
-            <p id="status" style="color: var(--text-color);">nulo</p>
+            <p id="status" style="color: var(--text-color); padding: 10px;"></p>
             <button id="button">Calcular</button>
         </div>
     </div>

@@ -178,13 +178,19 @@ button {
         width: 90%;
     }
 
+    .container #header-title {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .range label {
+        font-size: 14px;
+    }
+
     .Insight {
         margin-top: 20px;
         padding: 10px;
     }
 
-    h3,
-    span {
-        font-size: 10px;
-    }
+
 }
