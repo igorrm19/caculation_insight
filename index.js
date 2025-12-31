@@ -30,7 +30,7 @@ button.addEventListener('click', function () {
         stat.textContent = 'Viral  🤑';
         stat.style.color = 'green';
     } else if (porcentagem > 2 && porcentagem < 9.999) {
-        insight.style.backgroundColor = 'var(--primary-color)';
+        insight.style.backgroundColor = 'var(--secondary-color)';
         stat.textContent = '';
     }
 });
