@@ -15,6 +15,57 @@ range2.addEventListener('input', function () {
     span2.textContent = this.value;
 });
 
+span1.addEventListener('click', function () {
+
+    if (this.querySelector('input')) return;
+
+    const valorAtual = this.textContent;
+    const input = document.createElement('input');
+    input.type = 'number';
+    input.value = valorAtual;
+
+    this.textContent = '';
+    this.appendChild(input);
+    input.focus();
+
+    input.addEventListener('blur', function () {
+        const novoValor = input.value;
+        range1.value = novoValor;
+        span1.textContent = novoValor;
+    });
+
+    input.addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') {
+            input.blur();
+        }
+    });
+})
+
+span2.addEventListener('click', function () {
+
+    if (this.querySelector('input')) return;
+
+    const valorAtual = this.textContent;
+    const input = document.createElement('input');
+    input.type = 'number';
+    input.value = valorAtual;
+
+    this.textContent = '';
+    this.appendChild(input);
+    input.focus();
+
+    input.addEventListener('blur', function () {
+        const novoValor = input.value;
+        range2.value = novoValor;
+        span2.textContent = novoValor;
+    });
+
+    input.addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') {
+            input.blur();
+        }
+    });
+})
 
 button.addEventListener('click', function () {
     span3.textContent = ((range2.value / range1.value) * 100).toFixed(3);
