@@ -22,12 +22,12 @@ button.addEventListener('click', function () {
 
     if (porcentagem <= 2) {
         insight.style.backgroundColor = 'red';
-        stat.textContent = 'Fracasso 😒';
+        stat.textContent = 'Failure 😒';
         stat.style.color = 'red';
 
     } else if (porcentagem > 9.999) {
         insight.style.backgroundColor = 'green';
-        stat.textContent = 'Viral  🤑';
+        stat.textContent = 'Viral 🤑';
         stat.style.color = 'green';
     } else if (porcentagem > 2 && porcentagem < 9.999) {
         insight.style.backgroundColor = 'var(--secondary-color)';
