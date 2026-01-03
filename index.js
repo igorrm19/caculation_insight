@@ -22,6 +22,8 @@ span1.addEventListener('click', function () {
     const valorAtual = this.textContent;
     const input = document.createElement('input');
     input.type = 'number';
+    input.min = 0;
+    input.max = 10000000;
     input.value = valorAtual;
 
     this.textContent = '';
@@ -48,6 +50,8 @@ span2.addEventListener('click', function () {
     const valorAtual = this.textContent;
     const input = document.createElement('input');
     input.type = 'number';
+    input.min = 0;
+    input.max = 1000000;
     input.value = valorAtual;
 
     this.textContent = '';
